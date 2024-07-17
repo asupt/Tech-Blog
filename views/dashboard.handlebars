@@ -39,6 +39,21 @@
     {{/each}}
   </div>
   {{/if}}
+
+    {{#if comments.length}}
+  <div class="col-md-6 post-list">
+    <h3>Current Comments:</h3>
+
+    {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/post/{{comment.post_id}}">{{comment.content}}</a></h4>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+  
 </div>
 
 <script src="./js/profile.js"></script>

@@ -1,6 +1,9 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
+
+  //////////////////////////// Create new post //////////////////////////
+
   const title = document.querySelector('#post-name').value.trim();
   const content = document.querySelector('#post-desc').value.trim();
 
@@ -36,6 +39,9 @@ const delButtonHandler = async (event) => {
     }
   }
 };
+
+
+
 
 document
   .querySelector('.new-post-form')
